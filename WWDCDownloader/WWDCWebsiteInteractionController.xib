@@ -12,6 +12,7 @@
                 <action selector="download:" destination="NZy-fD-Iji" id="waN-aq-q9q"/>
                 <outlet property="HDCheckbox" destination="5bc-xI-uvG" id="hKJ-fe-jPV"/>
                 <outlet property="PDFCheckbox" destination="tdz-K1-rIS" id="i9j-Fz-A4t"/>
+                <outlet property="SDCheckbox" destination="uMc-Po-NlG" id="HWP-aK-Mhx"/>
                 <outlet property="downloadButton" destination="NZy-fD-Iji" id="nSj-tc-pSv"/>
                 <outlet property="webView" destination="xep-Fu-xaN" id="PpM-oc-Lag"/>
                 <outlet property="window" destination="uGQ-0R-zCI" id="314-UV-mDt"/>
@@ -21,29 +22,37 @@
         <customObject id="-3" userLabel="Application"/>
         <window title="WWDCDownloader" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="uGQ-0R-zCI">
             <windowStyleMask key="styleMask" titled="YES" miniaturizable="YES" resizable="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="372"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
+            <rect key="contentRect" x="335" y="390" width="1000" height="650"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
             <view key="contentView" id="sRh-du-LW5">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="372"/>
+                <rect key="frame" x="0.0" y="0.0" width="1000" height="650"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <webView translatesAutoresizingMaskIntoConstraints="NO" id="xep-Fu-xaN">
-                        <rect key="frame" x="0.0" y="42" width="480" height="330"/>
+                        <rect key="frame" x="0.0" y="61" width="1000" height="589"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" javaEnabled="NO">
                             <nil key="identifier"/>
                         </webPreferences>
                     </webView>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="5bc-xI-uvG">
-                        <rect key="frame" x="18" y="18" width="109" height="18"/>
+                        <rect key="frame" x="18" y="25" width="109" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="check" title="Download HD" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="BeF-1m-muf">
+                        <buttonCell key="cell" type="check" title="Download HD" bezelStyle="regularSquare" imagePosition="left" inset="2" id="BeF-1m-muf">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="uMc-Po-NlG">
+                        <rect key="frame" x="144" y="25" width="106" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Download SD" bezelStyle="regularSquare" imagePosition="left" inset="2" id="gNU-fR-3qa">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="tdz-K1-rIS">
-                        <rect key="frame" x="131" y="18" width="120" height="18"/>
+                        <rect key="frame" x="270" y="25" width="120" height="18"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="check" title="Download PDFs" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="bIJ-Kc-XfD">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -51,7 +60,7 @@
                         </buttonCell>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NZy-fD-Iji">
-                        <rect key="frame" x="363" y="6" width="103" height="32"/>
+                        <rect key="frame" x="876" y="13" width="103" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Download" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="o4o-7T-gMz">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -60,16 +69,18 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="tdz-K1-rIS" firstAttribute="leading" secondItem="5bc-xI-uvG" secondAttribute="trailing" constant="8" symbolic="YES" id="AlJ-SR-2ds"/>
-                    <constraint firstAttribute="trailing" secondItem="NZy-fD-Iji" secondAttribute="trailing" constant="20" id="N2H-ip-Utj"/>
-                    <constraint firstItem="xep-Fu-xaN" firstAttribute="leading" secondItem="sRh-du-LW5" secondAttribute="leading" id="OrM-le-Xvd"/>
-                    <constraint firstItem="tdz-K1-rIS" firstAttribute="baseline" secondItem="NZy-fD-Iji" secondAttribute="baseline" constant="-3" id="WvI-yH-q5Y"/>
-                    <constraint firstItem="5bc-xI-uvG" firstAttribute="leading" secondItem="sRh-du-LW5" secondAttribute="leading" constant="20" symbolic="YES" id="bGW-dV-fps"/>
-                    <constraint firstAttribute="bottom" secondItem="tdz-K1-rIS" secondAttribute="bottom" constant="20" symbolic="YES" id="d3h-XR-R9F"/>
-                    <constraint firstItem="xep-Fu-xaN" firstAttribute="trailing" secondItem="sRh-du-LW5" secondAttribute="trailing" id="nAB-xE-aK7"/>
-                    <constraint firstItem="5bc-xI-uvG" firstAttribute="top" secondItem="xep-Fu-xaN" secondAttribute="bottom" constant="8" symbolic="YES" id="pXq-w7-lmC"/>
-                    <constraint firstItem="tdz-K1-rIS" firstAttribute="baseline" secondItem="5bc-xI-uvG" secondAttribute="baseline" id="td5-ln-MDp"/>
-                    <constraint firstItem="xep-Fu-xaN" firstAttribute="top" secondItem="sRh-du-LW5" secondAttribute="top" id="wrU-5b-JAK"/>
+                    <constraint firstAttribute="bottom" secondItem="NZy-fD-Iji" secondAttribute="bottom" constant="20" symbolic="YES" id="5Qw-yn-qvY"/>
+                    <constraint firstItem="uMc-Po-NlG" firstAttribute="baseline" secondItem="5bc-xI-uvG" secondAttribute="baseline" id="6nw-SD-bjO"/>
+                    <constraint firstAttribute="trailing" secondItem="NZy-fD-Iji" secondAttribute="trailing" constant="27" id="JWb-Gu-g0N"/>
+                    <constraint firstItem="5bc-xI-uvG" firstAttribute="leading" secondItem="sRh-du-LW5" secondAttribute="leading" constant="20" symbolic="YES" id="KD2-Fu-fIY"/>
+                    <constraint firstItem="uMc-Po-NlG" firstAttribute="leading" secondItem="5bc-xI-uvG" secondAttribute="trailing" constant="21" id="PD4-lV-4Lo"/>
+                    <constraint firstItem="tdz-K1-rIS" firstAttribute="leading" secondItem="uMc-Po-NlG" secondAttribute="trailing" constant="24" id="Re8-yG-NWf"/>
+                    <constraint firstItem="NZy-fD-Iji" firstAttribute="top" secondItem="xep-Fu-xaN" secondAttribute="bottom" constant="20" symbolic="YES" id="UMY-Ok-OHp"/>
+                    <constraint firstItem="tdz-K1-rIS" firstAttribute="baseline" secondItem="uMc-Po-NlG" secondAttribute="baseline" id="ie9-zJ-KeG"/>
+                    <constraint firstItem="xep-Fu-xaN" firstAttribute="leading" secondItem="sRh-du-LW5" secondAttribute="leading" id="izc-2H-iq3"/>
+                    <constraint firstItem="xep-Fu-xaN" firstAttribute="trailing" secondItem="sRh-du-LW5" secondAttribute="trailing" id="orf-ll-587"/>
+                    <constraint firstItem="xep-Fu-xaN" firstAttribute="top" secondItem="sRh-du-LW5" secondAttribute="top" id="uy8-A0-ttl"/>
+                    <constraint firstItem="tdz-K1-rIS" firstAttribute="top" secondItem="NZy-fD-Iji" secondAttribute="top" id="x1N-bi-iSj"/>
                 </constraints>
             </view>
             <connections>
@@ -88,6 +99,7 @@
                 <relationship kind="action" name="download:"/>
                 <relationship kind="outlet" name="HDCheckbox" candidateClass="NSButton"/>
                 <relationship kind="outlet" name="PDFCheckbox" candidateClass="NSButton"/>
+                <relationship kind="outlet" name="SDCheckbox" candidateClass="NSButton"/>
                 <relationship kind="outlet" name="downloadButton" candidateClass="NSButton"/>
                 <relationship kind="outlet" name="webView" candidateClass="WebView"/>
             </relationships>

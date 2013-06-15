@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>956D34C1-A8D0-46F6-98AA-2C8754468875</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WWDCDownloader</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>763CBB77-79F4-42F4-B459-24C35260F89A</key>
+		<string>https://github.com/joachimVdH/WWDCDownloader.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WWDCDownloader.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>763CBB77-79F4-42F4-B459-24C35260F89A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/joachimVdH/WWDCDownloader.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>763CBB77-79F4-42F4-B459-24C35260F89A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>763CBB77-79F4-42F4-B459-24C35260F89A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WWDCDownloader</string>
+		</dict>
+	</array>
+</dict>
+</plist>

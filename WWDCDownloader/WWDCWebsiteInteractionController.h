@@ -11,6 +11,7 @@
 @property (assign) IBOutlet WebView *webView;
 
 @property (assign) IBOutlet NSButton *HDCheckbox;
+@property (assign) IBOutlet NSButton *SDCheckbox;
 @property (assign) IBOutlet NSButton *PDFCheckbox;
 
 @property (assign) IBOutlet NSButton *downloadButton;

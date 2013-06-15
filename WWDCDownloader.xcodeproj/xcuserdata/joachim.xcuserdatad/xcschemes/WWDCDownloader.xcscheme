@@ -28,16 +28,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "92112795176B00C30030AD92"
-               BuildableName = "WWDCDownloaderTests.xctest"
-               BlueprintName = "WWDCDownloaderTests"
-               ReferencedContainer = "container:WWDCDownloader.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

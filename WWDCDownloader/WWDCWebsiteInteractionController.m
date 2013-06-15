@@ -167,7 +167,7 @@ Example HTML that we look for (with the formatting cleaned up):
 			[self downloadFromAnchorElement:anchorElement forSessionNamed:sessionName];
 		}
 
-		if (self.HDCheckbox.state == NSOffState && [anchorElement.href hasSuffix:@"SD.mov?dl=1"]) {
+		if (self.SDCheckbox.state == NSOnState && [anchorElement.href hasSuffix:@"SD.mov?dl=1"]) {
 			[self downloadFromAnchorElement:anchorElement forSessionNamed:sessionName];
 		}
 
